@@ -10,7 +10,7 @@ final class Record {
   public Record(long id, String name, List<String> tokens) {
     this.id = id;
     this.name = name;
-    this.tokens = tokens;
+    this.tokens = new ArrayList<>(tokens);
   }
   public long getId() {
     return id;

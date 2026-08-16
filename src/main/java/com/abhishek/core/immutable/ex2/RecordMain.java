@@ -13,6 +13,7 @@ public class RecordMain {
         System.out.println(record);   //Record{id=1, name='value', tokens=[active]}
 
         record.getTokens().add("new token");
+        tokens.add("active1");
 
         System.out.println(record);   //Record{id=1, name='value', tokens=[active]}
 

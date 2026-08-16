@@ -77,8 +77,10 @@ Type some messages and press **Enter**.
 ```sh
 bin\windows\kafka-console-consumer.bat --topic my-topic --from-beginning --bootstrap-server localhost:9092
 ```
-
----
+- `--property print.key=true` : This option ensures that the key of the messages is printed in addition to the value.
+```sh
+bin\windows\kafka-console-consumer.bat --topic product-created-events-topic --bootstrap-server localhost:9092 --property print.key=true
+```
 
 ## 🎯 **Summary**
 - ✅ **Modify `config\kraft\server.properties` instead.**
